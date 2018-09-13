@@ -22,7 +22,7 @@ public class AisdecoderController {
             consumes = MediaType.APPLICATION_JSON_VALUE,
             produces = MediaType.APPLICATION_JSON_VALUE
     )
-    public List<AISMessage> greeting(@RequestBody List<String> nmea) {
+    public List<AISMessage> decode(@RequestBody List<String> nmea) {
         return aisdecoderService.decode(nmea);
     }
 
