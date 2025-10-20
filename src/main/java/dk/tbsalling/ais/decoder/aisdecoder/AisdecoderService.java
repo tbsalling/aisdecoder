@@ -22,7 +22,7 @@ public class AisdecoderService implements Consumer<AISMessage> {
         // Decode all received messages
         nmeaMessagesAsStrings.forEach(nmeaMessageAsString -> {
             try {
-                NMEAMessage nmeaMessage = NMEAMessage.fromString(nmeaMessageAsString);
+                NMEAMessage nmeaMessage = new NMEAMessage(nmeaMessageAsString);
                 nmeaMessageHandler.accept(nmeaMessage);
             } catch(NMEAParseException e) {
                 System.err.printf(e.getMessage());
