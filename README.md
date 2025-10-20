@@ -18,7 +18,7 @@ AIS (Automatic Identification System) is an automatic tracking system used on sh
 
 ## Prerequisites
 
-- Java 8 or higher
+- Java 21 or higher
 - Gradle (included via wrapper)
 
 ## Building the Project
@@ -99,10 +99,10 @@ curl -X POST http://localhost:8080/decode \
 
 ## Technology Stack
 
-- **Spring Boot 2.0.5** - Application framework
-- **aismessages 2.2.3** - AIS message parsing library
-- **Java 8** - Programming language
-- **Gradle** - Build tool
+- **Spring Boot 3.1.5** - Application framework
+- **aismessages 4.1.0** - AIS message parsing library
+- **Java 21** - Programming language
+- **Gradle 8.5** - Build tool
 
 ## Project Structure
 
